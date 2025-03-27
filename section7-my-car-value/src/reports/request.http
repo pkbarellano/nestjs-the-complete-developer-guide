@@ -1,0 +1,12 @@
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "make": "Toyota",
+    "model": "Avanza",
+    "year": 2017,
+    "mileage": 80000,
+    "lng": 14.58501591830241,
+    "lat": 0,
+    "price": 600000
+}
