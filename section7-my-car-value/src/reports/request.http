@@ -2,11 +2,22 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "make": "Toyota",
-    "model": "Avanza",
+    "make": "Test",
+    "model": "Test 123",
     "year": 2017,
     "mileage": 80000,
     "lng": 14.58501591830241,
     "lat": 0,
     "price": 600000
 }
+
+### Approve an existing report
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+    "approved": false
+}
+
+### Gest an estimate for an existing vehicle
+GET http://localhost:3000/reports?make=TestMake1&model=TestModel&lng=0&lat=0&mileage=10000&year=1970
