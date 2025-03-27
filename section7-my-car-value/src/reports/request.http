@@ -2,17 +2,17 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-    "make": "Test",
-    "model": "Test 123",
-    "year": 2017,
-    "mileage": 80000,
+    "make": "Make 1",
+    "model": "Model 1",
+    "year": 2008,
+    "mileage": 12500,
     "lng": 14.58501591830241,
     "lat": 0,
-    "price": 600000
+    "price": 156500
 }
 
 ### Approve an existing report
-PATCH http://localhost:3000/reports/1
+PATCH http://localhost:3000/reports/18
 Content-Type: application/json
 
 {
@@ -20,4 +20,4 @@ Content-Type: application/json
 }
 
 ### Gest an estimate for an existing vehicle
-GET http://localhost:3000/reports?make=TestMake1&model=TestModel&lng=0&lat=0&mileage=10000&year=1970
+GET http://localhost:3000/reports?make=Make%201&model=Model%201&lng=14&lat=0&mileage=11000&year=2003
